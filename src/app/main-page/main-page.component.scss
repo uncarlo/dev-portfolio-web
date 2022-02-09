@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    text-align: center;
+        
+    h1 {
+        color: #1B3A6D;
+    }
+}
+
+section {
+    article {
+        padding: 0px 10px 10px 10px;
+        
+        div {
+            text-align: center;
+            padding: 1px 0;
+            
+            .linkedin
+            {
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   
+   .copyright {
+       text-align: center;
+   }
+   
+   .poweredByContainer {
+       margin-top: 15px;
+       margin-bottom: 15px;
+       text-align: center;
+   }
+   .poweredBy {
+       height: 50px;
+   }    
+}
