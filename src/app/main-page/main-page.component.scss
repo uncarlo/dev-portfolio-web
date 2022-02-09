@@ -1,43 +1,170 @@
-header {
-    width: 100%;
-    text-align: center;
-        
-    h1 {
-        color: #1B3A6D;
-    }
+section {
+    background-color: white;
+    border-radius: 25px;
+    margin: 30px;
 }
 
-section {
-    article {
-        padding: 0px 10px 10px 10px;
-        
-        div {
-            text-align: center;
-            padding: 1px 0;
-            
-            .linkedin
-            {
-                margin-right: 25px;
-            }
+.header-container {
+    display: flex;
+    padding: 40px;
+
+    .header-info {
+        display: flex;
+    }
+
+    .name-role {
+        label {
+            display: block;
+        }
+    }
+
+    .social {
+        flex-grow: 1;
+        text-align: right;
+
+        .linkedin {
+            margin-right: 20px;
+            height: 45px;
+        }
+
+        .github {
+            margin-right: 20px;
+            height: 45px;
+        }
+
+        .resume {
+            margin-right: 20px;
+            height: 44px;
+        }
+    }
+
+    .profile-pic-container {
+        flex-shrink: 0;
+
+        height: 200px;
+        width: 200px;
+
+        border-style: solid;
+        border-width: 15px;
+        border-color: #eee;
+        border-radius: 50%;
+        overflow: hidden;
+
+        filter: drop-shadow(0px 0px 20px #aaa);
+
+        img {
+            height: inherit;
+            width: inherit;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        font-size: 1em;
+
+        .title {
+            font-size: 2em;
+        }
+
+        .subtitle {
+            margin-top: 5px;
+            margin-left: 2px;
+            color: #888;
+        }
+
+        .about {
+            margin-top: 50px;
+            margin-left: 2px;
+            font-size: 1.25em;
         }
     }
 }
 
-footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   
-   .copyright {
-       text-align: center;
-   }
-   
-   .poweredByContainer {
-       margin-top: 15px;
-       margin-bottom: 15px;
-       text-align: center;
-   }
-   .poweredBy {
-       height: 50px;
-   }    
+.footer {
+    padding: 15px 40px;
+
+    .footer-border {
+        border-top: solid 1px #2b4257;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .poweredByContainer {
+        margin-top: 15px;
+        text-align: center;
+
+        .poweredBy {
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 20px;
+    }
+
+    .header-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .header-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social {
+            margin: 20px auto 0px auto;
+            text-align: center;
+            
+            .linkedin {
+                margin-right: 20px;
+                height: 40px;
+            }
+
+            .github {
+                margin-right: 20px;
+                height: 40px;
+            }
+
+            .resume {
+                margin-right: 0;
+                height: 40px;
+            }
+        }
+
+        .profile-pic-container {
+            flex-shrink: 0;
+            margin: 0 auto;
+        }
+
+        .info {
+            margin-left: 0;
+            text-align: center;
+                
+            .title {
+                font-size: 2em;
+            }
+    
+            .subtitle {
+                margin-top: 5px;
+                margin-left: 2px;
+                color: #888;
+            }
+    
+            .about {
+                margin-top: 50px;
+                margin-left: 2px;
+                font-size: 1.25em;
+            }
+        }
+    }
 }

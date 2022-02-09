@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary-color: #2B4257;
+$primary-font-color: #333;
+
+* {
+    font-family: "Lato", sans-serif;
+    font-size: 100%;
+    color: $primary-font-color;
+}
+
+body {
+    background-color: $primary-color;
+}
